@@ -4,11 +4,11 @@ runtime-version: '5.13'
 sdk: org.kde.Sdk
 command: masterpdfeditor5
 finish-args:
-  - '--device=dri'
-  - '--share=ipc'
-  - '--share=network'
-  - '--socket=x11'
-  - '--socket=wayland'
+  - --device=dri
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+  - --socket=wayland
 modules:
   - name: sane-backends
     sources:
@@ -16,29 +16,34 @@ modules:
         url: https://gitlab.com/sane-project/backends/uploads/9e718daff347826f4cfe21126c8d5091/sane-backends-1.0.28.tar.gz
         sha256: 31260f3f72d82ac1661c62c5a4468410b89fb2b4a811dabbfcc0350c1346de03
     post-install:
-      - 'echo 127.0.0.1 > /app/etc/sane.d/net.conf'
-      - 'echo net > /app/etc/sane.d/dll.conf'
+      - echo 127.0.0.1 > /app/etc/sane.d/net.conf
+      - echo net > /app/etc/sane.d/dll.conf
 
   - name: masterpdfeditor5
     buildsystem: simple
     build-commands:
-      - 'mkdir -p /app/bin'
-      - 'ln -s /app/{extra,bin}/masterpdfeditor5'
-      - 'install -Dm 755 apply_extra.sh /app/bin/apply_extra'
-      - 'install -Dm 644 net.codeindustry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo'
-      - 'install -Dm 644 net.codeindustry.MasterPDFEditor.desktop -t /app/share/applications'
-      - 'install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps'
+      - mkdir -p /app/bin
+      - ln -s /app/{extra,bin}/masterpdfeditor5
+      - install -Dm 755 apply_extra.sh /app/bin/apply_extra
+      - install -Dm 644 net.codeindustry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo
+      - install -Dm 644 net.codeindustry.MasterPDFEditor.desktop -t /app/share/applications
+      - install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.6.09-qt5.amd64.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.6.20-qt5.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: ebbbcaf4390ae90dfbf772e44a6ca5977e0356e3c4ed73f21c807690b933326d
-        size: 15870854
+        sha256: 2454dc2f3b4a4a98962ec4721cb1d27de5e8282056bf062ff700138460957d20
+        size: 15890894
+        x-checker-data:
+          type: html
+          url: https://code-industry.net/free-pdf-editor/
+          version-pattern: master-pdf-editor-([0-9.]+)-qt5\.x86_64\.tar\.gz
+          url-template: https://code-industry.net/public/master-pdf-editor-$version-qt5.x86_64.tar.gz
       - type: script
         dest-filename: apply_extra.sh
         commands:
-          - 'tar --strip-components=1 -xf master-pdf-editor.tar.gz'
-          - 'rm master-pdf-editor.tar.gz'
+          - tar --strip-components=1 -xf master-pdf-editor.tar.gz
+          - rm master-pdf-editor.tar.gz
       - type: file
         path: net.codeindustry.MasterPDFEditor.metainfo.xml
       - type: file
