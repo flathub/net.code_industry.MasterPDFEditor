@@ -6,7 +6,7 @@
   <developer_name>Code Industry</developer_name>
   <summary>View, create, modify, sign, scan, OCR and print PDF documents</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>proprietary</project_license>
+  <project_license>LicenseRef-proprietary</project_license>
   <url type="homepage">https://code-industry.net/masterpdfeditor/</url>
   <description>
     <p>Master PDF Editor is straightforward, easy to use application for working with PDF documents equipped with powerful multi-purpose functionality. With Master PDF Editor you can easily view, create and modify PDF documents. The application enables you to merge several files into one, split a source document into multiple documents, and also to comment, sign and encrypt PDF files.</p>
