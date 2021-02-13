@@ -21,50 +21,7 @@
     <kudo>ModernToolkit</kudo>
   </kudos>
   <releases>
-    <release version="5.7.20" date="2021-01-31"/>
-    <release version="5.7.10" date="2021-01-24"/>
-    <release version="5.7.08" date="2021-01-19"/>
-    <release version="5.7.00" date="2021-01-16"/>
-    <release version="5.6.80" date="2020-11-24"/>
-    <release version="5.6.49" date="2020-09-15"/>
-    <release version="5.6.42" date="2020-08-19"/>
-    <release version="5.6.40" date="2020-08-18"/>
-    <release version="5.6.29" date="2020-07-29"/>
-    <release version="5.6.20" date="2020-07-10"/>
-    <release version="5.6.09" date="2020-07-05">
-      <description>
-        <ul>
-          <li>Added Recent files to the main page and main menu</li>
-          <li>Added Poster and Multipage printing modes</li>
-          <li>Added customizable Toolbar settings</li>
-          <li>The program is fully optimized for the latest Linux distributions</li>
-          <li>Fixed issue with incorrect Initial View</li>
-          <li>Fixed issue with documents being opened on the wrong page</li>
-          <li>Fixed issue with ClosePage event</li>
-          <li>Added SubmitForm event message</li>
-          <li>Improved file saving speed</li>
-          <li>Fixed area calculation issues</li>
-          <li>Fixed issues with File Open dialog (focus loss in Linux)</li>
-          <li>Fixed file saving issue</li>
-          <li>Fixed issues with incorrect display of some PDF documents</li>
-          <li>Fixed bug which initiated infinite recursion when processing color in some documents</li>
-          <li>Fixed issue with watermarks creating from files</li>
-          <li>Fixed issue which crashed the application when printing</li>
-          <li>Improved JavaScript support</li>
-          <li>Fixed OpenSSL issues in some operating systems</li>
-          <li>Fixed numerous issues with printing</li>
-          <li>Other minor bugs fixed</li>
-        </ul>
-      </description>
-    </release>
-    <release version="5.4.38" date="2019-07-09">
-      <description>
-        <ul>
-          <li>Noticeably improved drag-and-drop for all supported OS and fixed all known issues with it</li>
-          <li>Fixed several different issues</li>
-        </ul>
-      </description>
-    </release>
+    <release version="4.3.89" date="2018-03-21"/>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="money-purchasing">intense</content_attribute>

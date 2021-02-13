@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Master PDF Editor 5
+Name=Master PDF Editor 4
 Comment=Edit PDF files
-Exec=masterpdfeditor5 %f
+Exec=masterpdfeditor4 %f
 Terminal=false
 Icon=net.codeindustry.MasterPDFEditor
 Type=Application

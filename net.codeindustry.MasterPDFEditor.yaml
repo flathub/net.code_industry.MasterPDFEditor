@@ -2,7 +2,7 @@ app-id: net.codeindustry.MasterPDFEditor
 runtime: org.kde.Platform
 runtime-version: '5.15'
 sdk: org.kde.Sdk
-command: masterpdfeditor5
+command: masterpdfeditor4
 finish-args:
   - --device=dri
   - --share=ipc
@@ -19,21 +19,21 @@ modules:
       - echo 127.0.0.1 > /app/etc/sane.d/net.conf
       - echo net > /app/etc/sane.d/dll.conf
 
-  - name: masterpdfeditor5
+  - name: masterpdfeditor4
     buildsystem: simple
     build-commands:
       - mkdir -p /app/bin
-      - ln -s /app/{extra,bin}/masterpdfeditor5
+      - ln -s /app/{extra,bin}/masterpdfeditor4
       - install -Dm 755 apply_extra.sh /app/bin/apply_extra
       - install -Dm 644 net.codeindustry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo
       - install -Dm 644 net.codeindustry.MasterPDFEditor.desktop -t /app/share/applications
       - install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.7.20-qt5.x86_64.tar.gz
+        url: http://code-industry.net/public/master-pdf-editor-4.3.89_qt5.amd64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: d5f79a58028df1a9f3bac5220e620d33ddf65463544fdae0d486359081d6ce53
-        size: 15905883
+        sha256: ac77db75bcc5f2bce21d98a55c07176e15682b0abe5a83708c53d38721fdab4c
+        size: 15002050
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
