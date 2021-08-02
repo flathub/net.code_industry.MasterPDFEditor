@@ -32,8 +32,8 @@ modules:
       - type: extra-data
         url: https://code-industry.net/public/master-pdf-editor-5.7.90-qt5.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: 24a958e24d19d98b2ac75d44051c9ab4f3d0bee5242f262f99b56021a069f1c9
-        size: 15988767
+        sha256: c141cb7ac27f615dd0c9325f194af59450f9e490677d29a33b656fae26aa9482
+        size: 15962243
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
