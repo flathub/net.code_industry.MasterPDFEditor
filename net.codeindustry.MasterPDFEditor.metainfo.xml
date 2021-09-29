@@ -21,6 +21,7 @@
     <kudo>ModernToolkit</kudo>
   </kudos>
   <releases>
+    <release version="5.8.06" date="2021-09-29"/>
     <release version="5.8.03" date="2021-09-26"/>
     <release version="5.7.90" date="2021-08-01"/>
     <release version="5.7.60" date="2021-05-06"/>

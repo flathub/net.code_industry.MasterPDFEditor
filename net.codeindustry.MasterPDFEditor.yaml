@@ -30,10 +30,10 @@ modules:
       - install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.8.03-qt5.x86_64.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.8.06-qt5.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: c14dd93b6ef45b174663498ea33cd8d18a5ded31424455cd8f3101a30abf1d7b
-        size: 15960121
+        sha256: 7fd4d03e97d1e04499846ebc516b967ec5777bbdf6e794deee196376a3849b17
+        size: 15975595
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
