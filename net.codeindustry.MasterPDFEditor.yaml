@@ -9,6 +9,7 @@ finish-args:
   - --share=network
   - --socket=x11
   - --socket=wayland
+  - --env=TMPDIR=/var/tmp
 modules:
   - name: sane-backends
     sources:
