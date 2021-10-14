@@ -55,6 +55,4 @@ modules:
         dest-filename: masterpdfeditor5wrapper.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.codeindustry.MasterPDFEditor}"
-          - mkdir $TMPDIR
-          - echo "TMPDIR="$TMPDIR
           - /app/bin/masterpdfeditor5 "$@"
