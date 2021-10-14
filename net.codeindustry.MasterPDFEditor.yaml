@@ -2,7 +2,7 @@ app-id: net.codeindustry.MasterPDFEditor
 runtime: org.kde.Platform
 runtime-version: '5.15'
 sdk: org.kde.Sdk
-command: masterpdfeditor5
+command: masterpdfeditor5wrapper
 finish-args:
   - --device=dri
   - --share=ipc
@@ -28,6 +28,7 @@ modules:
       - install -Dm 644 net.codeindustry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo
       - install -Dm 644 net.codeindustry.MasterPDFEditor.desktop -t /app/share/applications
       - install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
+      - install masterpdfeditor5wrapper.sh /app/bin/masterpdfeditor5wrapper
     sources:
       - type: extra-data
         url: https://code-industry.net/public/master-pdf-editor-5.8.06-qt5.x86_64.tar.gz
@@ -50,3 +51,10 @@ modules:
         path: net.codeindustry.MasterPDFEditor.desktop
       - type: file
         path: net.codeindustry.MasterPDFEditor.png
+      - type: script
+        dest-filename: masterpdfeditor5wrapper.sh
+        commands:
+          - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.codeindustry.MasterPDFEditor}"
+          - mkdir $TMPDIR
+          - echo "TMPDIR="$TMPDIR
+          - /app/bin/masterpdfeditor5 "$@"
