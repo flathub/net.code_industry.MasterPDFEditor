@@ -1,6 +1,6 @@
 app-id: net.codeindustry.MasterPDFEditor
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: masterpdfeditor5wrapper
 finish-args:
@@ -31,10 +31,10 @@ modules:
       - install masterpdfeditor5wrapper.sh /app/bin/masterpdfeditor5wrapper
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.8.32-qt5.x86_64.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.8.33-qt5.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: b6b7b242ad9d6c4b592eb71d9ecaf34e95fa313288bebcd9f6817cb0304eff50
-        size: 16918805
+        sha256: b202c5fcda5a36590be6203597b43332260ac1170c0eed831dd4c869e1ceb5f2
+        size: 16917660
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
