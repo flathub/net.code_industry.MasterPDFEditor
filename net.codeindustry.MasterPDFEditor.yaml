@@ -31,10 +31,10 @@ modules:
       - install masterpdfeditor5wrapper.sh /app/bin/masterpdfeditor5wrapper
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.9.21-qt5.x86_64.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.9.20-qt5.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: ab4bb9d9e0b643cf6b6b2d190ca663f52fb4054446d3e494ee25dea36d1767fe
-        size: 65593277
+        sha256: 0a4360dbbc3a5d0d9e023840e21f33d9134333707695e37d43727a4d45cf486b
+        size: 16865279
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
