@@ -4,13 +4,18 @@
   <launchable type="desktop-id">net.codeindustry.MasterPDFEditor.desktop</launchable>
   <name>Master PDF Editor</name>
   <developer_name>Code Industry</developer_name>
-  <summary>View, create, modify, sign, scan, OCR and print PDF documents</summary>
+  <summary>Master PDF Editor is a full solutions for work with PDF documents</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <url type="homepage">https://code-industry.net/masterpdfeditor/</url>
   <description>
-    <p>Master PDF Editor is straightforward, easy to use application for working with PDF documents equipped with powerful multi-purpose functionality. With Master PDF Editor you can easily view, create and modify PDF documents. The application enables you to merge several files into one, split a source document into multiple documents, and also to comment, sign and encrypt PDF files.</p>
-    <p>NOTE: This wrapper is not verified by, affiliated with, or supported by Code Industry.</p>
+    <ul>
+      <li>Edit PDF text and images, Mark and annotate, Merge and split.</li>
+      <li>JavaScript and Dynamic XFA form support.</li>
+      <li>Validation Forms and Calculate Values.</li>
+      <li>Adding a digital signature and Signing PDF Documents.</li>
+      <li>Fast and simple PDF forms fill out.</li>
+    </ul>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -22,7 +27,23 @@
   </kudos>
   <releases>
     <release version="5.9.85" date="2024-08-06">
-      <description></description>
+      <description>
+        <ul>
+          <li>Added the ability to set the font size using decimals.</li>
+          <li>Added a warning notification when opening documents with XFA forms.</li>
+          <li>Improved functionality of the comment tools.</li>
+          <li>Improved the mode for printers that do not support duplex printing.</li>
+          <li>Improved text highlighting.</li>
+          <li>Fixed an issue with editing and deleting actions in PDF forms.</li>
+          <li>Fixed an issue with opening the file from the context menu on Windows.</li>
+          <li>Fixed an issue with navigation in multi-page documents.</li>
+          <li>Fixed an issue with displaying the title bar.</li>
+          <li>Fixed an issue with exporting PDF documents to text files.</li>
+          <li>Fixed an incorrect behavior of the software when using measurement tools.</li>
+          <li>Added the ability to rename attached files.</li>
+          <li>Fixed crash when using the right-to-left interface.</li>
+        </ul>
+      </description>
     </release>
     <release version="5.9.82" date="2024-02-02"/>
     <release version="5.9.81" date="2023-12-08">
