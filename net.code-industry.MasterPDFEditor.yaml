@@ -1,4 +1,4 @@
-app-id: net.codeindustry.MasterPDFEditor
+app-id: net.code-industry.MasterPDFEditor
 runtime: org.kde.Platform
 runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
@@ -32,9 +32,9 @@ modules:
       - mkdir -p /app/bin
       - ln -s /app/{extra,bin}/masterpdfeditor5
       - install -Dm 755 apply_extra.sh /app/bin/apply_extra
-      - install -Dm 644 net.codeindustry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo
-      - install -Dm 644 net.codeindustry.MasterPDFEditor.desktop -t /app/share/applications
-      - install -Dm 644 net.codeindustry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
+      - install -Dm 644 net.code-industry.MasterPDFEditor.metainfo.xml -t /app/share/metainfo
+      - install -Dm 644 net.code-industry.MasterPDFEditor.desktop -t /app/share/applications
+      - install -Dm 644 net.code-industry.MasterPDFEditor.png -t /app/share/icons/hicolor/128x128/apps
       - install masterpdfeditor5wrapper.sh /app/bin/masterpdfeditor5wrapper
     sources:
       - type: extra-data
@@ -65,13 +65,13 @@ modules:
           - tar --strip-components=1 -xf master-pdf-editor.tar.gz
           - rm master-pdf-editor.tar.gz
       - type: file
-        path: net.codeindustry.MasterPDFEditor.metainfo.xml
+        path: net.code-industry.MasterPDFEditor.metainfo.xml
       - type: file
-        path: net.codeindustry.MasterPDFEditor.desktop
+        path: net.code-industry.MasterPDFEditor.desktop
       - type: file
-        path: net.codeindustry.MasterPDFEditor.png
+        path: net.code-industry.MasterPDFEditor.png
       - type: script
         dest-filename: masterpdfeditor5wrapper.sh
         commands:
-          - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.codeindustry.MasterPDFEditor}"
+          - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.code-industry.MasterPDFEditor}"
           - /app/bin/masterpdfeditor5 "$@"
