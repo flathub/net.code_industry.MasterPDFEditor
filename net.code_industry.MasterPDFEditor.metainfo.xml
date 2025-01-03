@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>net.code-industry.MasterPDFEditor</id>
-  <launchable type="desktop-id">net.code-industry.MasterPDFEditor.desktop</launchable>
+  <id>net.code_industry.MasterPDFEditor</id>
+  <launchable type="desktop-id">net.code_industry.MasterPDFEditor.desktop</launchable>
   <name>Master PDF Editor</name>
   <developer_name>Code Industry</developer_name>
   <summary>Master PDF Editor is a full solutions for work with PDF documents</summary>
