@@ -26,8 +26,26 @@
     <kudo>ModernToolkit</kudo>
   </kudos>
   <releases>
-    <release version="5.9.86" date="2024-11-19">
-      <description></description>
+    <release version="5.9.87" date="2024-02-24">
+      <description>
+          <ul>
+          <li>Improved converting a file format from PDF to PDF/A.</li>
+          <li>Improved creating and editing bookmarks.</li>
+          <li>Added the functionality to save custom page size.</li>
+          <li>Added the functionality to split files by specified page ranges.</li>
+          <li>Improved the document display when switching between pages.</li>
+          <li>Fixed issues when creating, opening, and editing documents.</li>
+          <li>Fixed an issue with the page display on the navigation panel.</li>
+          <li>Improved the display of some interface elements.</li>
+          <li>Improved export to the TXT and XLSX file formats.</li>
+          <li>Fixed issues with adding headers and footers.</li>
+          <li>Fixed issues with scanning.</li>
+          <li>Fixed an issue with the increase in document size.</li>
+          <li>Fixed bugs with duplex and color printing.</li>
+          <li>Fixed an issue with a signature when deleting a page.</li>
+          <li>Fixed a bug with activating a program.</li>
+        </ul>
+      </description>
     </release>
     <release version="5.9.86" date="2024-10-29">
       <description>
