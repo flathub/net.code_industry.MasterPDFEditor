@@ -27,7 +27,32 @@
   </kudos>
   <releases>
     <release version="5.9.89" date="2025-04-07">
-      <description></description>
+      <description>
+         <ul>
+          <li>Added automatic text recognition functionality.</li>
+          <li>Added document printing in a Booklet mode.</li>
+          <li>Implemented support for scaling PDF documents using the touchpad on Apple laptops.</li>
+          <li>Implemented the ability to rotate objects using a rotation handle located above objects.</li>
+          <li>Added a page selection feature that allows selecting pages with check boxes in the Navigation panel.</li>
+          <li>Added the ability to specify coordinates using mathematical operators in the object inspector.</li>
+          <li>Implemented numerous improvements and fixes to the printing process.</li>
+          <li>Fixed an issue with printing documents in Landscape and Portrait orientations.</li>
+          <li>Fixed incorrect display of the application icon on Wayland.</li>
+          <li>Fixed issues occurring during the export of PDF documents to text format.</li>
+          <li>Fixed an issue in the object inspector’s functionality.</li>
+          <li>Fixed a bug causing repeated initial styles on macOS.</li>
+          <li>Resolved an issue where a file would be overwritten despite selecting “No” in the “Replace File” dialog.</li>
+          <li>Fixed a bug related to creating a new session when canceling session creation.</li>
+          <li>Fixed an issue with text recognition on a specific page.</li>
+          <li>Fixed an issue related to moving a file tab after its update.</li>
+          <li>Resolved a bug affecting the border color change of the typewriter during editing.</li>
+          <li>Fixed an issue that caused the reset of bookmark styles and colors defined in their properties.</li>
+          <li>Fixed a bug that invalidated signatures upon saving a document.</li>
+          <li>Fixed an issue causing page size changes after converting a document to PDF/A format.</li>
+          <li>Resolved an issue when extracting pages to a network folder.</li>
+          <li>Fixed a crash caused by using hotkeys for printing with saved settings.</li>
+        </ul>
+      </description>
     </release>
     <release version="5.9.87" date="2024-02-24">
       <description>
