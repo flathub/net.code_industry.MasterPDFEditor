@@ -50,11 +50,11 @@ modules:
           version-pattern: master-pdf-editor-([0-9.]+)-qt5\.x86_64-qt_include\.tar\.gz
           url-template: https://code-industry.net/public/master-pdf-editor-$version-qt5.x86_64-qt_include.tar.gz
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.9.89-qt5.arm64.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.9.90-qt5.arm64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: bb10a9f62bf8f76dd06f27762257479b5fdae74194e95212486ea37d5cd0aaae
+        sha256: 9c7d7a37d5e332d0e90b2e9740bafbe921479c32c1ddbb231d91ed1d08fad11c
         only-arches: [aarch64]
-        size: 68265831
+        size: 52997176
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
