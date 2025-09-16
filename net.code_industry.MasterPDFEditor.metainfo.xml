@@ -29,27 +29,27 @@
      <release version="5.9.94" date="2025-09-15">
          <description></description>
      </release>
-     <release version="5.9.90" date="2025-07-01">
-         <description/>
-     </release>
-     <release version="5.9.90" date="2025-06-03">
+     <release version="5.9.94" date="2025-09-11">
       <description>
          <ul>
-          <li>Added support for page alignment options.</li>
-          <li>Added the function to save search history.</li>
-          <li>Added support for Z-reordering multiple objects simultaneously.</li>
-          <li>Fractional scale values are supported during printing.</li>
-          <li>General improvements and fixes for file saving.</li>
-          <li>Fixed issues related to PDF page display.</li>
-          <li>Fixed problems related to navigation between pages.</li>
-          <li>Improved compatibility with XFA-based PDF documents.</li>
-          <li>Bug fix for text object editing.</li>
-          <li>Fixed bugs related to page cropping.</li>
-          <li>Enhanced detection of conflicting keyboard shortcuts.</li>
-          <li>Resolved printing issues.</li>
-          <li>Fixed a bug related to increase in the file size when scanning.</li>
-          <li>Fixed PDF preview rendering in Microsoft Outlook.</li>
-          <li>Resolved an issue with opening Certificate Manager on macOS.</li>
+          <li>Added the functionality to compare documents.</li>
+          <li>Added the functionality to edit watermarks and backgrounds in the document.</li>
+          <li>Added the ability to insert default initials into documents.</li>
+          <li>Fixed bugs related to converting files to PDF/A-2. Now all files are converted to PDF/A-2 properly.</li>
+          <li>Added support for printing from the context menu on Windows.</li>
+          <li>Improved preview area in the Page Layout window.</li>
+          <li>Added automatic scrolling to the selected objects in the Object TreeView tab.</li>
+          <li>Fixed a bug with opening Certificate Manager on macOS starting from version 15.</li>
+          <li>Improvements to the watermark placed in the demo version.</li>
+          <li>A range of fixes made to the Print functionality.</li>
+          <li>Fixed a number of bugs in the user interface.</li>
+          <li>Fixed multiple issues related to operations of the View menu.</li>
+          <li>Bug fix for creating files in the wrong file format when using a virtual PDF printer.</li>
+          <li>Fixed incorrect comment and form importing in FDF format.</li>
+          <li>Fixed issues with displaying comments.</li>
+          <li>Resolved issues related to creating, displaying, and modifying page sizes.</li>
+          <li>Fixed a bug with restoring the last view settings on macOS.</li>
+          <li>Resolved an issue with editing text objects using the Edit Text tool.</li>
          </ul>
       </description>
     </release>
