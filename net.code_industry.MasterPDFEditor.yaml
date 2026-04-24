@@ -1,6 +1,6 @@
 app-id: net.code_industry.MasterPDFEditor
 runtime: org.kde.Platform
-runtime-version: 5.15-24.08
+runtime-version: 5.15-25.08
 sdk: org.kde.Sdk
 command: masterpdfeditor5wrapper
 finish-args:
@@ -14,8 +14,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/sane-project/backends.git
-        tag: 1.3.1
-        commit: 3ff55fd8ee04ae459e199088ebe11ac979671d0e
+        tag: 1.4.0
+        commit: c7e4b5e35e3d614d2b1181d760a717bfc395a203
     post-install:
       - echo 127.0.0.1 > /app/etc/sane.d/net.conf
       - echo net > /app/etc/sane.d/dll.conf
@@ -24,8 +24,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://github.com/OpenSC/pkcs11-helper/releases/download/pkcs11-helper-1.30.0/pkcs11-helper-1.30.0.tar.bz2
-        sha256: 4c5815ba910cabf26df08d449ca2909daf4538c9899aa7f7fadc61229d3488a9
+        url: https://github.com/OpenSC/pkcs11-helper/releases/download/pkcs11-helper-1.31.0/pkcs11-helper-1.31.0.tar.bz2
+        sha256: 46f0067bccd7be2c28f88b8bca775172b9e52fb6fc1280b44ca8bb831433fef9
 
   - name: masterpdfeditor5
     buildsystem: simple
