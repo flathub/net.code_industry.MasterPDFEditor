@@ -1,13 +1,14 @@
 app-id: net.code_industry.MasterPDFEditor
 runtime: org.kde.Platform
-runtime-version: 5.15-25.08
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 command: masterpdfeditor5wrapper
 finish-args:
   - --device=dri
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=cups
 modules:
   - name: sane-backends
@@ -39,27 +40,32 @@ modules:
       - install masterpdfeditor5wrapper.sh /app/bin/masterpdfeditor5wrapper
     sources:
       - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.9.98-qt5.x86_64-qt_include.tar.gz
+        url: https://code-industry.net/public/master-pdf-editor-5.9.98-qt6.x86_64.tar.gz
         filename: master-pdf-editor.tar.gz
-        sha256: 28d02cb3258b78caad332650205e90af52bff6d8a80b8703f3894bf5cd623203
+        sha256: 3f88eec51519ded8e5adedd003c5d257a10c466b09889474587d5a96c7248c96
         only-arches: [x86_64]
-        size: 124674319
+        size: 21526274
         x-checker-data:
           type: html
           url: https://code-industry.net/free-pdf-editor/
-          version-pattern: master-pdf-editor-([0-9.]+)-qt5\.x86_64-qt_include\.tar\.gz
-          url-template: https://code-industry.net/public/master-pdf-editor-$version-qt5.x86_64-qt_include.tar.gz
-      - type: extra-data
-        url: https://code-industry.net/public/master-pdf-editor-5.9.98-qt5.arm64.tar.gz
-        filename: master-pdf-editor.tar.gz
-        sha256: fa33573b87db6e487d51e6b437ed1f25b1d132ef734bf77ba3c5b80f6fbb90c2
-        only-arches: [aarch64]
-        size: 19863299
-        x-checker-data:
-          type: html
-          url: https://code-industry.net/free-pdf-editor/
-          version-pattern: master-pdf-editor-([0-9.]+)-qt5\.arm64\.tar\.gz
-          url-template: https://code-industry.net/public/master-pdf-editor-$version-qt5.arm64.tar.gz
+          version-pattern: master-pdf-editor-([0-9.]+)-qt6\.x86_64\.tar\.gz
+          url-template: https://code-industry.net/public/master-pdf-editor-$version-qt6.x86_64.tar.gz
+      # aarch64: Code Industry ships no Qt6 arm64 build yet, and a manifest has a single
+      # runtime-version, so this Qt6 bump (#113) is x86_64-only. The previous Qt5 arm64
+      # source is kept below for reference. NOTE: it is NOT a drop-in uncomment — a Qt5
+      # binary won't run on the Qt6 (6.9) runtime; when a Qt6 arm64 tarball exists, swap
+      # the url/sha256/size/x-checker pattern to it before re-enabling.
+      # - type: extra-data
+      #   url: https://code-industry.net/public/master-pdf-editor-5.9.98-qt5.arm64.tar.gz
+      #   filename: master-pdf-editor.tar.gz
+      #   sha256: fa33573b87db6e487d51e6b437ed1f25b1d132ef734bf77ba3c5b80f6fbb90c2
+      #   only-arches: [aarch64]
+      #   size: 19863299
+      #   x-checker-data:
+      #     type: html
+      #     url: https://code-industry.net/free-pdf-editor/
+      #     version-pattern: master-pdf-editor-([0-9.]+)-qt5\.arm64\.tar\.gz
+      #     url-template: https://code-industry.net/public/master-pdf-editor-$version-qt5.arm64.tar.gz
       - type: script
         dest-filename: apply_extra.sh
         commands:
@@ -75,4 +81,5 @@ modules:
         dest-filename: masterpdfeditor5wrapper.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.code_industry.MasterPDFEditor}"
+          - export QT_QPA_PLATFORM="wayland;xcb"
           - /app/bin/masterpdfeditor5 "$@"
