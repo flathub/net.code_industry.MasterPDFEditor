@@ -27,7 +27,32 @@
   </kudos>
   <releases>
      <release version="5.9.99" date="2026-08-11">
-         <description></description>
+         <description>
+           <ul>
+             <li>Implemented the ability to create initials with a transparent background when loading from an image.</li>
+             <li>Added saving the list of devices in the “Select Scanners” dialog window once the initial search for devices is canceled on Linux systems.</li>
+             <li>Added new command-line parameters for the Master PDF Editor Windows installer. You can now disable update checks, select the interface language, and specify the installation directory.</li>
+             <li>Improvements for document comparison.</li>
+             <li>Enhanced printing files with mixed-size pages.</li>
+             <li>Improvements for the deskew function.</li>
+             <li>Enhancements and fixes for the document encryption function.</li>
+             <li>Improvements and fixes for undoing redaction.</li>
+             <li>Resolved an issue which caused the progress bar to freeze after scanning.</li>
+             <li>Fixed a bug related to initials being added incorrectly in some documents, and improved the initials display.</li>
+             <li>Resolved an issue where the device list was handled incorrectly when rescanning on macOS.</li>
+             <li>Fixed an error which occurred on Linux systems when installing Qt 5-based packages.</li>
+             <li>Resolved various display issues with headers, footers, watermarks, backgrounds, and their preview areas under certain settings.</li>
+             <li>Fixed a bug that prevented opening folder shortcuts when selecting and saving documents on Windows.</li>
+             <li>Fixed an issue that resulted in incorrect page sizes when scanning on Linux.</li>
+             <li>Resolved an issue that prevented saving via the “Save As” menu item on Fedora.</li>
+             <li>Fixed the incorrect page orientation when printing documents using versions 2.4.14 and later of the CUPS printing system.</li>
+             <li>Resolved an error which made width and height values swap in custom page sizes in printer settings.</li>
+             <li>Fixed an issue where content on certain pages rotated incorrectly when deskewing during the optimization and optical character recognition of scanned pages.</li>
+             <li>Resolved an issue with non-functional hotkeys for adding bookmarks and improved how hotkeys function.</li>
+             <li>Resolved a bug in the Qt 6-based installation package which caused Windows File Explorer to freeze when editing and deleting files.</li>
+             <li>Various minor fixes and performance enhancements.</li>
+           </ul>
+         </description>
      </release>
      <release version="5.9.98" date="2026-04-15">
          <description/>
